@@ -1,0 +1,232 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+#root{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  height: 100%;
+  width: 70%;
+  max-width: 1077px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+button{
+  text-decoration: none;
+  background-color: #474955;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+}
+header{
+  max-width: 631px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#5A5C66;
+  margin-bottom: 15px;
+}
+header img{
+  width: 21px;
+  height: 21px;
+  margin-right: 24px;
+}
+.search{
+  background-color:#5A5C66;
+  padding-left: 26px;
+  font-weight: 400;
+  font-size: 14px;
+  border: 0;
+  color:  #B2B7BF;
+  width: 100%;
+  max-width: 631px;
+  cursor: pointer;
+}
+.add{
+  background-color: #FFF;
+  color: #393a43;
+  cursor: pointer;
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 20%;
+}
+.not_active_add{
+  display: none;
+}
+.active_add{
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF;
+  z-index: 1;
+  position:absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active_add div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #474955 1px solid;
+  width: 60%;
+  height: 15%;
+}
+.active_add_false{
+  border: 1px red solid;
+}
+.active_add_div{
+  width: 70%;
+}
+.active_add_div input{
+  width: 30%;
+}
+.active_add_div button{
+  width: 10%;
+}
+.tables{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.tables_top{
+  width: 100%;
+  color: #FFF;
+  background-color: #474955;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  height: 54px ;
+  max-height: 10%;
+}
+.tables_top_div{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tables_top_div img{
+  margin-left: 10%;
+  width: 11.66px;
+  height: 5.83px;
+}
+.tables_main{
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 13px;
+  min-height: 615px;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #E3E6EC ;
+  border-left: 1px solid #E3E6EC ;
+  border-right: 1px solid #E3E6EC ;
+  border-bottom: 1px solid #E3E6EC ;
+  
+}
+.tables_top_div:nth-child(1){
+  max-width: 110px;
+  width: 40%;
+}
+.tables_top_div:nth-child(2){
+  max-width: 529px;
+  width: 40%;
+}
+.tables_top_div:nth-child(3){
+  width: 40%;
+}
+.table_main_element{
+  width: 100%;
+  display: flex;
+  height: 100%;  
+  align-items: center;
+  border-bottom: 1px solid #E3E6EC;
+  text-align: center;
+  
+}
+.table_main_element div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table_main_element_name{
+  max-width: 110px;
+  width: 10%;
+  height: 100%;
+  border-right: 1px solid #E3E6EC;
+  text-align: center;
+}
+.table_main_element_date{
+  height: 100%;
+  padding-left: 8px;
+  max-width: 529px;
+  width: 45%;
+  border-right: 1px solid #E3E6EC;
+}
+.table_main_element_namber{
+  height: 100%;
+  width: 45%;
+  padding-left: 11px;
+  border-right: 1px solid #E3E6EC;
+}
+.table_main_element_redact{
+  width: 15%;
+  justify-content:space-around !important;
+}
+.table_main_element_redact img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.simple{
+  color:#474955;
+}
+.activ{
+  color: #7EBC3C;
+}
+footer{
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.page_button{
+  font-weight: 500;
+  font-size: 24px;
+  background-color: #FFF;
+  color: #474955;
+  cursor: pointer;
+}
+.page{
+  width: 60%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: italic;
+  align-self: flex-end;
+}
