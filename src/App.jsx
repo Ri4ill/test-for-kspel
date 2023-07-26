@@ -94,16 +94,16 @@ function App() {
   };
  
   const deleteItem = (id) => {
-    const index = datas.findIndex((item) => item.id === id);
-    const updatedDatas = [...datas];
+    const index = saveData.findIndex((item) => item.id === id);
+    const updatedDatas = [...saveData];
     updatedDatas.splice(index, 1);
     setSaveData(updatedDatas);
   };
 
   const changeItem = (id) => {
-    const copiedData = datas.find((obj) => obj.id === id);
+    const copiedData = saveData.find((obj) => obj.id === id);
     const updatedObject = { name: copiedData.name, date: copiedData.date, namber: copiedData.namber};
-    setSaveData(updatedObject)
+    setAddData(updatedObject)
     deleteItem(id)
     setAddpage(!addpage)
   };
